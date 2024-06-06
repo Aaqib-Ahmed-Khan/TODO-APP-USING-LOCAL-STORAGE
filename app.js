@@ -8,7 +8,7 @@ function loginUser(){
     if(!email.value ||!password.value)
         return alert ("Please enter your email or password");
 localStorage.setItem("email",email.value);
-checkIsUserLoggedin()
+checkIsUserLoggedin();
  }
 function checkIsUserLoggedin(){
     var email=localStorage.getItem("email")
@@ -16,6 +16,7 @@ function checkIsUserLoggedin(){
         login_container.style.display="none";
         home_container.style.display="block";
         user_email.innerText=email;
+        displayUserNotes();
     }
     else{
         login_container.style.display="block";
@@ -36,7 +37,7 @@ function submitNote() {
     };
   
     saveValueToLocalStorage(obj);
-    // note.value = "";
+     note.value = "";
   }
   
   function saveValueToLocalStorage(obj) {
