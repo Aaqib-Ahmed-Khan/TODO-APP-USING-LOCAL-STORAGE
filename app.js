@@ -36,7 +36,7 @@ function submitNote() {
     };
   
     saveValueToLocalStorage(obj);
-    note.value = "";
+    // note.value = "";
   }
   
   function saveValueToLocalStorage(obj) {
