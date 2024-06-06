@@ -7,15 +7,15 @@ function loginuser(){
         return alert ("Please enter your email or password");
 localStorage.setItem("email",email.value);
  }
-function checkuserlogin(){
-    var email=localstorage.getitem('email')
+function checkisuserlogin(){
+    var email=localstorage.getitem("email")
     if(email){
-        login_container.style.display='none';
-        home_container.style.display='block';
+        login_container.style.display="none";
+        home_container.style.display="block";
     }
     else{
-        login_container.style.display='block';
-        home_container.style.display='none';
+        login_container.style.display="block";
+        home_container.style.display="none";
  }
 }
-checkIsUserLogin();
+checkisuserlogin();
