@@ -58,8 +58,24 @@
 <p id="user_email"></p>
 <button onclick="logout()">LOGOUT</button>
 </span>
-       </div>
+<div>
+    <div class="p-10">
+    <div>
+        <textarea class="border p-4 w-full" id="note" rows="5"></textarea>Add you notes/list items here
+        <div>
+            <button
+              onclick="submitNote()"
+              class="btn bg-blue-600 py-2 px-3 rounded text-white"
+            >
+              Submit
+            </button>
+        </div>
+      </div>
+
+      <ul id="list"></ul>
     </div>
+  </div>
+
     <script src="app.js"></script>
 </body>
 </html>
