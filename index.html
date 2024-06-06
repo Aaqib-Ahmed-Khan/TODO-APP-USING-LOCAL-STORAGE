@@ -39,18 +39,26 @@
                                 </div>
                               
                             </div>
-                            <button onclick="loginuser()" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
+                            <button onclick="loginUser()"
+                             class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
                             <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                                 Don’t have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
                             </p>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
           </section>
     </div>
-    <div id ="home_container"> 
-Welcome to my data app. Store your todo list itmes over here !
+
+    <div id ="home_container"  style="display:none">
+       <div class="flex justify-between p-10">
+<h1>WELCOME TO MY DATA APP.STORE YOUR LIST ITEMS HERE. </h1>
+<span class="flex">
+<p id="user_email"></p>
+<button onclick="logout()">LOGOUT</button>
+</span>
+       </div>
     </div>
     <script src="app.js"></script>
 </body>
